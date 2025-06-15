@@ -1,0 +1,42 @@
+.manufacturing-process {
+  background-color: var(--white);
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: var(--light-color);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.process-step:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow);
+}
+
+.step-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
